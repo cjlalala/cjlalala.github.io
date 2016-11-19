@@ -1,0 +1,157 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "Microsoft Yahei";
+}
+body{
+	background-color: #dedede;
+	min-width:700px;
+}
+header{
+    width:100%;
+    height:80px;
+    background-color: #000;
+}
+header h1{
+	display: block;
+	float:left;
+	color:white;
+	margin:20px 50px;
+}
+nav {
+	width:380px;
+	float:right;
+	margin:30px 0;
+}
+nav ul li{
+    float:left;
+    width:95px;
+}
+nav ul li a{
+	text-decoration:none;
+	font-size:14px;
+	color: white;
+}
+nav ul li a:hover{
+	color:#dedede;
+}
+.content-main{
+	width:100%;
+	float:left;
+}
+.main-wrap{
+     margin-right:500px;
+     min-width:200px;
+}
+.content-right{
+	width:500px;
+	float:left;
+	margin-left:-500px;
+}
+article,section{
+	background-color: white;
+	margin:20px;
+	padding:30px;
+	box-shadow: 2px 2px  2px #8c8a8a;
+}
+p{
+    text-indent: 2em;
+    line-height:30px;
+}
+.tag{
+	color:#7d7675;
+}
+.title{
+	font-size: 18px;
+	margin:20px 0 15px ;
+}
+.author{
+	font-size:12px;
+	margin-bottom:15px;
+}
+article ul li{
+	list-style-type: none;
+	line-height:30px;
+}
+dd{
+	display: inline-block;
+	border:1px solid #dedede;
+	width:250px;
+	height:200px;
+	margin:20px;
+}
+dd p{
+	text-align:center;
+	margin-left:-25px;
+}
+dd img{
+	margin:10px 25px;
+
+}
+ol{
+	margin:0 0 20px 50px;
+}
+table{
+	width:100%;
+	border:1px solid #dedede;
+	border-collapse:collapse;
+
+}
+th{
+	background-color: #363636;
+	color:white;
+	border:1px solid #dedede;
+	height:30px ;
+	text-align: left;
+}
+td{
+	border:1px solid #dedede;
+	height:30px;
+}
+.table-foot{
+	background-color: #dedede;
+}
+section{
+	margin-left:0;
+}
+section h4{
+	padding:10px 10px;
+	border-left:4px solid #dedede;
+}
+.form-title{
+	display: inline-block;
+	width:200px;
+	text-align:right;
+	vertical-align:top;
+	margin-bottom:10px;
+	margin-right:5px;
+}
+.form-remark{
+	display:block;
+	margin:10px 0 15px 205px;
+	color:#7d7675;
+	font-size:14px;
+}
+textarea{
+	width:180px;
+	height:100px;
+	margin-bottom:10px;
+}
+.submit{
+	width:400px;
+	height:40px;
+	border-radius:10px;
+	background-color: #4156cc;
+	color:white;
+	font-size: 18px;
+	border:none;
+}
+footer{
+	float: left;
+	width:100%;
+	height:60px;
+	background-color: #000;
+	text-align:center;
+	color:white;
+	padding-top:30px;
+}
