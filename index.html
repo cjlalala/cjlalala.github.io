@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>cjlalala's Web</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <meta name="description" content="cjlalala个人网站,记录学习过程，展示前端作品。">
+  <meta name="keywords" content="web前端开发,前端组件,百度IFE任务">
+  <meta name="author" content="cjlalala" />
+  <link href="css/personalWeb.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class='banner'>
+  </header>
+ <!--导航栏-->
+  <div id="nav" class="scroll">
+    <div class="nav_content">
+      <div class="logo">
+        <a href="#"><img src="indexImg/logo2.png"></a>
+      </div>
+      <ul class="list">
+        <li class="leave"><a href="#leave_word">留言</a></li>
+        <li class="phone"><a href="#photo">图片</a></li>
+        <li class="life"><a href="#life">Demo</a></li>
+        <li class="blog"><a href="#blog">博客</a></li>
+        <li class="home"><a href="#">主页</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--过渡-->
+  <div class="transit wow slideInUp" data-wow-duration="500ms" data-wow-delay="700ms">
+    <img src='indexImg/hello3.png' class='hello'>
+    <img src='indexImg/me.png' class='panda'>
+  </div>
+  <!--轮播-->
+  <div class='carousel' id='carous'>
+          <div id='shedow_life' class='over'>My Demo - 百度IFE任务+组件
+           <span class='click'> (点击查看)</span></div>
+          <div id='shedow_blog' class='over'>My Blog - 学习笔记+想法记录 <span class='click'> (点击查看)</span></div>
+          <div id='shedow_leave' class='over'>Leave Words - 有什么想法或者建议？<span class='click'> (点击留言)</span></div>
+          <div id='shedow_photo' class='over'>My Photo - 喜欢的图片+生活记录 <span class='click'> (点击查看)</span></div>
+    <div id='limian'>
+        <img class='shedow_blog' alt='blog' src='indexImg/blog.png'/>
+        <img class='shedow_leave' alt='leave' src='indexImg/word2.png'/>
+        <img class='shedow_photo' alt='photo' src='indexImg/photo111.png'/>
+        <img class='shedow_life' alt='demo' src='indexImg/demo.png'/>
+        <img class='shedow_blog' alt='blog' src='indexImg/blog.png'/>
+        <img class='shedow_leave' alt='leave' src='indexImg/word2.png'/> 
+    </div>
+    <div class='pre_next'>
+      <img id='pre' src='indexImg/pre4.png'>
+      <img id='next' src='indexImg/next4.png'>
+    </div>
+  </div>
+<!--内容-->
+   <div class="content">
+    <div id="blog">
+      <h2 class='title'>MY BLOG</h2>
+      <h4 class='remark'>学习笔记+想法记录</h4>
+      <div class='essay' >
+        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
+          <span class='tag_css'><a href="#">CSS</a></span>
+          <h4><a href="#">使用CSS完成元素居中的七种方法</a><div class='blog_data'>2016-6-2</div></h4>
+          <p>据我所知,在CSS中至少有六种实现居中的方法.我将使用下面的HTML结构从简单到复杂开始讲解: 鞋子图片会改变,但是他们都...</p>
+        </article>
+        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="500ms">
+          <span class='tag_html'><a href="#">HTML</a></span>
+          <h4><a href="#">一场由Html5发动的移动办公革命正在兴起</a><div class='blog_data'>2016-6-2</div></h4>
+          <p>一股是以微信企业号、阿里钉钉等为代表的企业移动应用,另一股势力则是以云适配为代表的创业公司发动的Html5. 云适配率先发动...</p>
+        </article>
+        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="600ms">
+          <span class='tag_js'><a href="#">JavaScript</a></span>
+          <h4><a href="#">从 JavaScript 数组去重谈性能优化</a><div class='blog_data'>2016-6-2</div></h4>
+          <p>虽然大部分情况下 JS 语言本身（狭义范畴，不包含 DOM 等延拓）不会导致性能问题，但很多面试还是会把性能作为一个考点...</p>
+        </article>
+        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="700ms">
+          <span class='tag_skill'><a href="#">技能</a></span>
+          <h4><a href="#">10个实用的生活小技能</a><div class='blog_data'>2016-6-2</div></h4>
+          <p>平时很难解决的生活小问题,有了这些小技能就能处理,简单快捷又不费力,还不快来瞧一瞧? 1.牛仔裤不褪色 将新买的牛仔裤放入...</p>
+        </article>
+      </div>
+    </div>
+<!--项目部分-->
+  <div id="demo">
+      <h2 class='title'>MY DEMO</h2>
+      <h4 class='remark'>创作记录 + 灵感来源</h4>
+      <div class='circle_cont'>
+        <a href=''><span class='circle1 radius'>百度IFE任务</span></a>
+        <a href=''><span class='circle2 radius'>组件</span></a>
+        <a href=''><span class='circle3 radius'>动画</span></a>
+      </div>
+  </div>
+
+<!--图片部分-->
+    <div id="photo">
+        <h2 class='title'>MY PHOTO</h2>
+        <h4 class='remark'>喜欢的图片+生活记录</h4>
+        <div class='photo_cont'>
+          <div class='explain one'><p>一生痴绝处，无梦到徽州。</p></div>
+          <div class='transform'><img class='pic1' src='indexImg/photo12.png'></div>
+        </div>
+        <div class='photo_cont'>
+          <div class='transform'><img class='pic2' src='indexImg/photo333.png'></div>
+          <div class='explain two'><p>不要将你的东西为了某一特定时刻而预留着，因为你生活的每一天都是特别的。</p></div>
+        </div>
+        <div class='photo_cont'>
+          <div class='explain three'>   
+          <p>曲径通幽处 · 万籁此俱寂</p></div>
+          <div class='transform'><img class='pic3' src='indexImg/photo3333.png'></div>
+        </div>
+        <div class='photo_cont'>
+          <div class='transform'><img class='pic4' src='indexImg/photo4.png'></div>
+          <div class='transform'><img class='pic5' src='indexImg/photo5.png'></div>
+          <div class='explain four'>
+          <p>好吃又好看才能叫美食！如果还有趣那就更好啦！</p></div>
+        </div>
+    </div>
+
+    <div id='leave_word'>
+        <h2 class='title'>Leave Words</h2>
+        <h4 class='remark'>不留下点什么？</h4>
+        <div class='words_shwo'>
+           <div class='example wow slideInUp' data-wow-duration="300ms" data-wow-delay="500ms"><img src='indexImg/back1.png'><span class='words'>还不错哦！</span>
+           <span class='leave_data'>2016-6-4</span><span class='leave_name'>来自:cjlalala</span></div>
+           <div class='example wow slideInUp' data-wow-duration="300ms" data-wow-delay="600ms"><img src='indexImg/back2.png'><span class='words'>很喜欢这个界面！</span>
+           <span class='leave_data'>2016-4-2</span><span class='leave_name'>来自:yydssb</span></div>
+           <div class='example wow slideInUp' data-wow-duration="300ms" data-wow-delay="700ms"><img src='indexImg/back3.png'><span class='words'>还可以！</span>
+           <span class='leave_data'>2016-3-9</span><span class='leave_name'>来自:hahaha</span></div>
+        </div>
+        <form>
+          <label for="name">名称</label>
+          <input id="name" type="text" placeholder='请填写名称'><br>
+          <label for="email">邮箱</label>
+          <input id="email" type="text" placeholder='可选择是否填写，不会进行显示，方便我与你联系'><br>
+          <label for="details" class='label_area'>内容</label>
+          <textarea id="details" type="text" placeholder='一切想说的都可以'></textarea>
+          <button>提交</button>
+        </form>
+    </div>
+  </div>
+    <footer id='footer'>
+      <p class="thank"> ABOUT &emsp;ME</p>
+      <div class='account'>
+        <a href="https://github.com/cjlalala" target='_blank'><img src="indexImg/github2.png"></a>
+        <a href="#"><img src="indexImg/qq.png"></a>
+        <a href="#"><img src="indexImg/weixin.png"></a>
+        <a href="#"><img src="indexImg/weibo.png"></a>       
+      </div>
+    </footer>
+    <div id="top">↑</div>
+
+<script src="js/personalWeb.js" ></script>
+<script src="js/wow.min.js"></script>
+<script>
+wow = new WOW({
+      animateClass: 'animated',
+});
+wow.init();
+</script>
+</body>
+</html>
