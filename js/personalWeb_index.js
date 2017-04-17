@@ -1,6 +1,3 @@
-function $(id){
-  return document.getElementById(id); 
-}
 //事件绑定函数，兼容浏览器
 function addEvent(dom,type,fn){
     if(dom.addEventListener){
@@ -14,8 +11,8 @@ function addEvent(dom,type,fn){
 window.onload=function(){
   //导航栏滚动固定
   window.onscroll=function(){
-    var nav=$('nav'),
-        top=$('top');
+    var nav=document.getElementById('nav'),
+        top=document.getElementById('top');
     var imgHeight=document.body.clientHeight||document.documentElement.clientHeight;
     var target_top=document.body.scrollTop||document.documentElement.scrollTop;
     target_top >= imgHeight? nav.className = "fixed":nav.className = "";
