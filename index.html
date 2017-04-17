@@ -1,158 +1,188 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang='zh-cmn-Hans'>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <title>cjlalala's Web</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-  <meta name="description" content="cjlalala个人网站,记录学习过程，展示前端作品。">
+  <meta name="description" content="cjlalala个人网站 记录学习过程 展示前端作品">
   <meta name="keywords" content="web前端开发,前端组件,百度IFE任务">
   <meta name="author" content="cjlalala" />
+  <link href="css/common.css" rel="stylesheet">
   <link href="css/personalWeb.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet">
 </head>
 <body>
-  <header id="header" class='banner'>
-  </header>
+  <!--跳动的爱心-->
+  <div id="animation">
+    <span class='welcome'>Welcome</span>
+    <div id="heart" class="beat"></div>
+  </div>
  <!--导航栏-->
-  <div id="nav" class="scroll">
-    <div class="nav_content">
+  <nav id="nav">
       <div class="logo">
         <a href="#"><img src="img/indexImg/logo2.png"></a>
       </div>
-      <ul class="list">
-        <li class="leave"><a href="#leave_word">留言</a></li>
-        <li class="phone"><a href="#photo">图片</a></li>
-        <li class="life"><a href="#life">Demo</a></li>
-        <li class="blog"><a href="#blog">博客</a></li>
-        <li class="home"><a href="#">主页</a></li>
+      <ul class="nav_list">  
+        <li class="home nowPage"><a href="#">主页</a></div></div></li>
+        <li class="blog"><a href="#blog">博客</a></div></div></li>
+        <li class="demo"><a href="#demo">Demo</a></div></div></li>
+        <li class="photo"><a href="#photo">图片</a></div></div></li>
+        <li class="about"><a href="#about">关于</a></div></div></li>  
       </ul>
-    </div>
-  </div>
-  <!--过渡-->
-  <div class="transit wow slideInUp" data-wow-duration="500ms" data-wow-delay="700ms">
-    <img src='img/indexImg/hello3.png' class='hello'>
-    <img src='img/indexImg/me.png' class='panda'>
-  </div>
-  <!--轮播-->
-  <div class='carousel' id='carous'>
-          <div id='shedow_life' class='over'>My Demo - 百度IFE任务+组件
-           <span class='click'> (点击查看)</span></div>
-          <div id='shedow_blog' class='over'>My Blog - 学习笔记+想法记录 <span class='click'> (点击查看)</span></div>
-          <div id='shedow_leave' class='over'>Leave Words - 有什么想法或者建议？<span class='click'> (点击留言)</span></div>
-          <div id='shedow_photo' class='over'>My Photo - 喜欢的图片+生活记录 <span class='click'> (点击查看)</span></div>
-    <div id='limian'>
-        <img class='shedow_blog' alt='blog' src='img/indexImg/blog.png'/>
-        <img class='shedow_leave' alt='leave' src='img/indexImg/word2.png'/>
-        <img class='shedow_photo' alt='photo' src='img/indexImg/photo111.png'/>
-        <img class='shedow_life' alt='demo' src='img/indexImg/demo.png'/>
-        <img class='shedow_blog' alt='blog' src='img/indexImg/blog.png'/>
-        <img class='shedow_leave' alt='leave' src='img/indexImg/word2.png'/> 
-    </div>
-    <div class='pre_next'>
-      <img id='pre' src='img/indexImg/pre4.png'>
-      <img id='next' src='img/indexImg/next4.png'>
-    </div>
+  </nav>
+  <!--图片-->
+  <div id='inside'>
+    <a href="#blog"><img alt='blog' src='img/indexImg/blog.png'/></a>
+    <a href="#demo"><img alt='demo' src='img/indexImg/demo.png'/></a>
+    <a href="#photo"><img alt='photo' src='img/indexImg/photo111.png'/></a> 
+    <a href="#about"><img alt='about' src='img/indexImg/word2.png'/></a>
+    <p class='inside_bot'></p>
   </div>
 <!--内容-->
    <div class="content">
     <div id="blog">
-      <h2 class='title'>MY BLOG</h2>
+      <a href='http://www.cnblogs.com/cjlalala/'><h2 class='title'>My Blog</h2></a>
       <h4 class='remark'>学习笔记+想法记录</h4>
       <div class='essay' >
-        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
-          <span class='tag_css'><a href="#">CSS</a></span>
-          <h4><a href="#">使用CSS完成元素居中的七种方法</a><div class='blog_data'>2016-6-2</div></h4>
-          <p>据我所知,在CSS中至少有六种实现居中的方法.我将使用下面的HTML结构从简单到复杂开始讲解: 鞋子图片会改变,但是他们都...</p>
+        <article>
+          <span class='tag'><a href="http://www.cnblogs.com/cjlalala/category/836157.html">IFE任务</a></span>
+          <h4><a href="http://www.cnblogs.com/cjlalala/p/5547572.html">左右定宽，中间一栏根据父元素宽度填充满</a><div class='blog_data'>2016-5-31</div></h4>
+          <p>题目：1.使用 HTML与CSS按照如下示例图，实现三栏式布局。2.左右两栏宽度固定，中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器。背景色为 #eee 区域的高度取决于三个子元素中最高的高...</p>
         </article>
-        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="500ms">
-          <span class='tag_html'><a href="#">HTML</a></span>
-          <h4><a href="#">一场由Html5发动的移动办公革命正在兴起</a><div class='blog_data'>2016-6-2</div></h4>
-          <p>一股是以微信企业号、阿里钉钉等为代表的企业移动应用,另一股势力则是以云适配为代表的创业公司发动的Html5. 云适配率先发动...</p>
+        <article>
+          <span class='tag'><a href="http://www.cnblogs.com/cjlalala/category/836157.html">IFE 任务</a></span>
+          <h4><a href="http://www.cnblogs.com/cjlalala/p/5556855.html">如何解决高度坍塌问题？——BFC模式</a><div class='blog_data'>2016-6-3</div></h4>
+          <p>问题引起是2016IFE春季问题的任务三，总的父元素parent包含三个浮动的子元素，容器的高度不能自动伸长以适应内容的高度...</p>
         </article>
-        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="600ms">
-          <span class='tag_js'><a href="#">JavaScript</a></span>
-          <h4><a href="#">从 JavaScript 数组去重谈性能优化</a><div class='blog_data'>2016-6-2</div></h4>
-          <p>虽然大部分情况下 JS 语言本身（狭义范畴，不包含 DOM 等延拓）不会导致性能问题，但很多面试还是会把性能作为一个考点...</p>
+        <article>
+          <span class='tag'><a href="http://www.cnblogs.com/cjlalala/category/797776.html">JavaScript</a></span>
+          <h4><a href="http://www.cnblogs.com/cjlalala/p/5810640.html">数组对象的方法（含jQuery 转载）</a><div class='blog_data'>2016-8-26</div></h4>
+          <p>JavaScript 1.6 引入了几个新的Array 方法，具体的介绍见：New in JavaScript 1.6 。这些方法已经被写进了ECMA262...</p>
         </article>
-        <article class="wow slideInLeft" data-wow-duration="300ms" data-wow-delay="700ms">
-          <span class='tag_skill'><a href="#">技能</a></span>
-          <h4><a href="#">10个实用的生活小技能</a><div class='blog_data'>2016-6-2</div></h4>
-          <p>平时很难解决的生活小问题,有了这些小技能就能处理,简单快捷又不费力,还不快来瞧一瞧? 1.牛仔裤不褪色 将新买的牛仔裤放入...</p>
+        <article>
+          <span class='tag'><a href="http://www.cnblogs.com/cjlalala/category/797773.html">CSS</a></span>
+          <h4><a href="http://www.cnblogs.com/cjlalala/p/5585713.html">Flexbox属性总结</a><div class='blog_data'>2016-6-14</div></h4>
+          <p>flex布局模型不同于块和内联模型布局，块和内联模型的布局计算依赖于块和内联的流方向，而flex布局依赖于flex...</p>
         </article>
       </div>
     </div>
 <!--项目部分-->
   <div id="demo">
-      <h2 class='title'>MY DEMO</h2>
+      <a href='demo.html'><h2 class='title'>My Demo</h2></a>
       <h4 class='remark'>创作记录 + 灵感来源</h4>
-      <div class='circle_cont'>
-        <a href=''><span class='circle1 radius'>百度IFE任务</span></a>
-        <a href=''><span class='circle2 radius'>组件</span></a>
-        <a href=''><span class='circle3 radius'>动画</span></a>
+      <div class='demo_cont'>
+          <ul class='demo_list'>
+            <li>
+              <div class='li_cont'>
+                <h4>任务1:零基础HTML编码</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
+            <li>
+              <div class='li_cont'>
+                <h4>任务2:零基础HTML及CSS编码(1)</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
+            <li>
+              <div class='li_cont'>
+                <h4>任务3:三栏式布局</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
+            <li>
+              <div class='li_cont'>
+                <h4>任务4:定位和居中问题</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
+            <li>
+              <div class='li_cont'>
+                <h4>任务5:零基础HTML及CSS编码(2)</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
+            <li>
+              <div class='li_cont'>
+                <h4>任务6:通过HTML及CSS模拟报纸排版</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
+            <li>
+              <div class='li_cont'>
+                <h4>任务7:实现常见的产品官网的页面架构及样式布局</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
+            <li>
+              <div class='li_cont'>
+                <h4>任务8:响应式网格(栅格化)布局</h4>
+                <a href=''>查看题目</a>
+                <a href=''>Demo</a>
+                <a href=''>代码</a>
+              </div>
+            </li>
       </div>
+      <a href='demo.html'><button class='demo_more'>More...</button></a>
   </div>
-
 <!--图片部分-->
     <div id="photo">
-        <h2 class='title'>MY PHOTO</h2>
+        <h2 class='title'>My Photo</h2>
         <h4 class='remark'>喜欢的图片+生活记录</h4>
-        <div class='photo_cont'>
-          <div class='explain one'><p>一生痴绝处，无梦到徽州。</p></div>
-          <div class='transform'><img class='pic1' src='img/indexImg/photo12.png'></div>
-        </div>
-        <div class='photo_cont'>
-          <div class='transform'><img class='pic2' src='img/indexImg/photo333.png'></div>
-          <div class='explain two'><p>不要将你的东西为了某一特定时刻而预留着，因为你生活的每一天都是特别的。</p></div>
-        </div>
-        <div class='photo_cont'>
-          <div class='explain three'>   
-          <p>曲径通幽处 · 万籁此俱寂</p></div>
-          <div class='transform'><img class='pic3' src='img/indexImg/photo3333.png'></div>
-        </div>
-        <div class='photo_cont'>
-          <div class='transform'><img class='pic4' src='img/indexImg/photo4.png'></div>
-          <div class='transform'><img class='pic5' src='img/indexImg/photo5.png'></div>
-          <div class='explain four'>
-          <p>好吃又好看才能叫美食！如果还有趣那就更好啦！</p></div>
+        <div class='photos'>
+          <div class='photo_cont'>
+            <div class='explain one'><p>透</p></div>
+            <div class='transform'><img class='pic1' src='img/indexImg/photo1.png'></div>
+          </div>
+          <div class='photo_cont'>
+            <div class='transform'><img class='pic2' src='img/indexImg/photo2.png'></div>
+            <div class='explain two'><p>黄 · 蓝</p></div>
+          </div>
+          <div class='photo_cont'>
+            <div class='explain three'>   
+            <p>蓝 · 粉</p></div>
+            <div class='transform'><img class='pic3' src='img/indexImg/photo3.png'></div>
+          </div>
+          <div class='photo_cont'>
+            <div class='transform'><img class='pic4' src='img/indexImg/photo4.jpg'></div>
+            <div class='transform'><img class='pic5' src='img/indexImg/photo5.png'></div>
+            <div class='explain four'>
+            <p>西柚</p></div>
+          </div>
         </div>
     </div>
-
-    
+    <!--关于部分-->
+    <div id='about'>
+        <h2 class='title'>About</h2>
+        <img src='img/indexImg/about-left.jpg' class='about-left'>
+        <div class='about-cont'>
+          <p>姓名： 陈婕</p>
+          <p>电话：13593742137</p>
+          <p>邮箱：cjlalala_work@163.com</p>
+          <p><a href='https://github.com/cjlalala'>github地址↗</a></p>
+          <p><a href='http://www.cnblogs.com/'>博客园地址↗</a></p>
+        </div>
+        <img src='img/indexImg/about-right.jpg' class='about-right'>
+    </div>
   </div>
-  <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="cjalala" data-title="随便" data-url="https://cjlalala.github.io/"></div>
-  <!-- 多说评论框 end -->
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"cjlalala"};
-	  (function() {
-		  var ds = document.createElement('script');
-		  ds.type = 'text/javascript';ds.async = true;
-		  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		  ds.charset = 'UTF-8';
-		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-
-    <footer id='footer'>
-      <p class="thank"> ABOUT &emsp;ME</p>
-      <div class='account'>
-        <a href="https://github.com/cjlalala" target='_blank'><img src="img/indexImg/github2.png"></a>
-        <a href="#"><img src="img/indexImg/qq.png"></a>
-        <a href="#"><img src="img/indexImg/weixin.png"></a>
-        <a href="#"><img src="img/indexImg/weibo.png"></a>       
-      </div>
-    </footer>
-    <div id="top">↑</div>
-
-<script src="js/personalWeb.js" ></script>
-<script src="js/wow.min.js"></script>
-<script>
-wow = new WOW({
-      animateClass: 'animated',
-});
-wow.init();
+  <div id="top">↑</div>
+  <footer>  
+  </footer>
+ 
+<script src="js/personalWeb_index.js" ></script>
 </script>
 </body>
 </html>
