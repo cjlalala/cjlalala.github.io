@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6,p{
   display: -webkit-flex;  
   display: -ms-flexbox;  
   display: flex;  
-	-webkit-box-flex: 5;  
+  -webkit-box-flex: 5;  
   -webkit-flex: 5;  
   -ms-flex: 5;  
   flex: 5;  
@@ -50,11 +50,11 @@ h1,h2,h3,h4,h5,h6,p{
 	height: 50px;
 }
 .nav_list{
-	display: -webkit-box ;  
+  display: -webkit-box ;  
   display: -webkit-flex ;  
   display: -ms-flexbox ;  
   display: flex;  
-	-webkit-box-flex: 5;  
+  -webkit-box-flex: 5;  
   -webkit-flex: 5;  
   -ms-flex: 5;  
   flex: 5; 
@@ -80,19 +80,19 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /*回到顶部*/
 #top{
-	  display: none;
-	  position: fixed;
-	  z-index: 10;
+    display: none;
+    position: fixed;
+    z-index: 10;
     right:1.5rem;
-    bottom:2.25rem;
-	  width:2.5rem;
-    height:2.5rem;
-    line-height: 2.5rem;
+    bottom:2.25rem; 
+    width:50px;
+    height:50px;
+    line-height: 50px;
     background:rgba(0,0,0,0.8);
     color: #fff;
     text-align: center;
     cursor: pointer;
-    font-size: 2.25rem;
+    font-size:40px;
 }
 @media only screen and (min-width: 1080px), only screen and (min-device-width:1080px) {
     html,body {
