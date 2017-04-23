@@ -11,7 +11,8 @@ function addEvent(dom,type,fn){
 window.onload=function(){
   //导航栏滚动固定
   var imgHeight;
-  clientW<541?imgHeight=50:imgHeight=document.body.clientHeight||document.documentElement.clientHeight;
+  if(clientW<541)imgHeight=50;
+  else imgHeight=document.body.clientHeight||document.documentElement.clientHeight;
   window.onscroll=function(){
     var nav=document.getElementById('nav'),
         top=document.getElementById('top');
