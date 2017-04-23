@@ -114,8 +114,7 @@
 }
 .title{
 	width: 100%;
-
-	line-height:2;
+	line-height:1.8;
 	font-size:3rem;
 	font-weight: 300;
 	word-spacing:0.8rem;
@@ -299,7 +298,8 @@ article:nth-child(1),article:nth-child(2),article:nth-child(3){
 #about p{
 	float:left;
 	width:100%;
-	line-height: 2rem;
+	font-size: 20px;
+	line-height: 2;
 }
 footer{
 	clear: both;
@@ -312,6 +312,9 @@ footer{
 @media (max-width:540px){
 	#animation{
 		display: none;
+	}
+	.title{
+		font-size: 40px;
 	}
 	.demo_list li{
 		width:100%;
