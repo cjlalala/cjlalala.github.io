@@ -1,1 +1,73 @@
-#demo{width:100%}.demo_cont{padding:0 5%;margin:0 auto}#demo .list{width:100%;float:left}#demo .list h3{font-weight:400}#demo .list li{display:inline-block;float:left;height:6rem;margin-bottom:1rem}.list .li_cont{height:5rem;margin:.5rem 1rem;box-shadow:1px 1px 5px #eae9e9;background-color:#eae9e9}.list li h4{font-size:.75rem;line-height:3rem;font-weight:600;margin-left:.5rem;text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.list li a{display:inline-block;font-size:.75rem;background-color:#fff;border-radius:.2rem;line-height:1.5rem;margin-left:.5rem;padding:0 .2rem}.more{display:block;width:85%;height:2.25rem;margin:3rem auto;outline:0;border:1px solid #ccc;box-shadow:2px 2px 5px #ccc;border-radius:1.125rem;font-size:1rem;background-color:#fff}@media(max-width:540px){.list li{width:100%}.logo{display:none}}@media (min-width:540px) and (max-width:991px){.list li{width:50%}}@media (min-width:992px) and (max-width:1199px){.list li{width:33.33%}}@media (min-width:1200px){.list li{width:25%}}
+/*demo部分*/
+#demo{
+	width: 100%;
+}
+#demo h3{
+	font-size: 26px;
+	line-height: 3;
+}
+.demo_cont{
+	width: 90%;
+	float: left;
+	padding: 0 5% 5%;
+	margin:0 auto;
+}
+#demo .list{
+	width:100%;
+	float:left;
+}
+#demo .list h3{
+	font-weight: normal;
+}
+#demo .list li{
+	display: inline-block;
+	float:left;
+	
+	margin-bottom: 1rem;
+}
+.list .li_cont{
+	padding:0.5rem 0.5rem 1rem;
+	margin:0 20px 20px;
+	background-color: #eae9e9;
+}
+.list li h4{
+	font-size: 20px;
+	line-height: 3;
+	margin-left: 4%;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.list li a{
+	display: inline-block;
+	font-size: 16px;
+	background-color:white;
+	border-radius: 0.2rem;
+	line-height: 2;
+	margin-left: 4%;
+	padding:0 0.2rem;
+}
+@media(max-width:540px){
+	.list li{
+		width:100%;
+	}
+	.logo{
+      display: none;
+    }
+}
+@media (min-width:540px) and (max-width:991px){
+	.list li{
+		width:50%;
+	}
+}
+@media (min-width:992px) and (max-width:1199px){
+	.list li{
+		width:33.33%;
+	}
+}
+@media (min-width:1200px){
+	.list li{
+		width:25%;
+	}
+}
