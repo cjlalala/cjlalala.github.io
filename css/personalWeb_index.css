@@ -330,6 +330,9 @@ footer{
 		padding:1%;
 		margin-bottom: 1rem;
 	}
+	.explain p{
+		font-size: 14px;
+	}
 	.logo{
 		display: none;
 	}
