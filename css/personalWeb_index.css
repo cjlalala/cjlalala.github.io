@@ -124,7 +124,7 @@
 	width: 100%;
 	line-height:2;
 	text-align: center;
-	font-size:16px;
+	font-size:14px;
 	font-weight:500;
 }
 /*blog开始*/
@@ -207,13 +207,13 @@ article:nth-child(1),article:nth-child(2),article:nth-child(3){
 .demo_more{
 	display: block;
 	width:85%;
-	height: 2.25rem;
+	height: 40px;
 	margin:3rem auto;
 	outline: none;
 	border:1px solid #ccc;
 	box-shadow: 2px 2px 5px #ccc;
 	border-radius: 1.125rem;
-	font-size: 1rem;
+	font-size:22px;
 	background-color: #fff;
 }
 /*photo部分*/
