@@ -255,7 +255,7 @@ article:nth-child(1),article:nth-child(2),article:nth-child(3){
 	position:relative;
 	top:3.5rem;
 	text-align: center;
-	font-size:0.9rem;
+	font-size:20px;
 	line-height:1.5rem;
 }
 .one{
