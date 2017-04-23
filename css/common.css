@@ -20,11 +20,14 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /*导航*/
 #nav{
-  	width: 90%;
-  	padding:0 5%;
-  	height: 2.5rem;
-  	background-color: rgba(0,0,0,0.7);
-  	display:flex;
+  width: 90%;
+  padding:0 5%;
+  height:50px;
+  background-color: rgba(0,0,0,0.7);
+  display: -webkit-box ;  
+  display: -webkit-flex ;  
+  display: -ms-flexbox ;  
+  display: flex;  
 }
 .fixed{
 	position: fixed;
@@ -33,32 +36,47 @@ h1,h2,h3,h4,h5,h6,p{
 	z-index: 1000;
 }
 .logo{
-	display: flex;
-  	flex:5;
-  	padding-left:12%;
+  display: -webkit-box ;  
+  display: -webkit-flex;  
+  display: -ms-flexbox;  
+  display: flex;  
+	-webkit-box-flex: 5;  
+  -webkit-flex: 5;  
+  -ms-flex: 5;  
+  flex: 5;  
+  padding-left:12%;
 }
 .logo img{
-	height: 2.5rem;
+	height: 50px;
 }
 .nav_list{
-	display:flex;
-	flex:5;
+	display: -webkit-box ;  
+  display: -webkit-flex ;  
+  display: -ms-flexbox ;  
+  display: flex;  
+	-webkit-box-flex: 5;  
+  -webkit-flex: 5;  
+  -ms-flex: 5;  
+  flex: 5; 
 	margin-right: 5%;
 }
 #nav ul li {
   display: inline-block;
   text-decoration: none;
-  line-height: 2.5rem;
-  font-size: 0.9rem;
-  flex:1;
+  line-height:50px;
+  font-size: 16px;
+  -webkit-box-flex: 1;  
+  -webkit-flex: 1;  
+  -ms-flex: 1;  
+  flex: 1; 
   text-align: center;
 }
 .nav_list a{
    color: #fff;
-   padding-bottom: 0.5rem;
 }
-.nowPage a{
-	border-bottom: 0.1rem solid #fff;
+
+.nav_list a:hover,.nowPage a{
+	color:#FF0033;
 }
 /*回到顶部*/
 #top{
